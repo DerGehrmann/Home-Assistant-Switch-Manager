@@ -2,15 +2,13 @@ name: Philips Hue Tap Dial
 service: ZHA
 event_type: zha_event
 identifier_key: device_id
-info: |
-  Action rotate will execute on any step, slow or fast so be aware if using rotate with another action for the dial as it will execute twice.
 buttons:
   - d: M 197.73633 25.056641 C 102.18018 25.056637 24.716794 102.52002 24.716797 198.07617 L 197.73633 198.07617 L 197.73633 25.056641 z
     actions:
       - title: press
         conditions:
           - key: payload
-            value: button_1_press_release
+            value: button_1_short_release
       - title: 2x press
         conditions:
           - key: payload
@@ -40,7 +38,7 @@ buttons:
       - title: press
         conditions:
           - key: payload
-            value: button_2_press_release
+            value: button_2_short_release
       - title: 2x press
         conditions:
           - key: payload
@@ -70,7 +68,7 @@ buttons:
       - title: press
         conditions:
           - key: payload
-            value: button_3_press_release
+            value: button_3_short_release
       - title: 2x press
         conditions:
           - key: payload
@@ -100,7 +98,7 @@ buttons:
       - title: press
         conditions:
           - key: payload
-            value: button_4_press_release
+            value: button_4_short_release
       - title: 2x press
         conditions:
           - key: payload
