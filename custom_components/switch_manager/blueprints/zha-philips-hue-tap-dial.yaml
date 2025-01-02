@@ -1,0 +1,127 @@
+name: Philips Hue Tap Dial
+service: ZHA
+event_type: zha_event
+identifier_key: device_id
+info: |
+  Action rotate will execute on any step, slow or fast so be aware if using rotate with another action for the dial as it will execute twice.
+buttons:
+  - d: M 197.73633 25.056641 C 102.18018 25.056637 24.716794 102.52002 24.716797 198.07617 L 197.73633 198.07617 L 197.73633 25.056641 z
+    actions:
+      - title: press
+        conditions:
+          - key: payload
+            value: button_1_press_release
+      - title: 2x press
+        conditions:
+          - key: payload
+            value: button_1_double_press
+      - title: 3x press
+        conditions:
+          - key: payload
+            value: button_1_triple_press
+      - title: 4x press
+        conditions:
+          - key: payload
+            value: button_1_quadruple_press
+      - title: 5x press
+        conditions:
+          - key: payload
+            value: button_1_quintuple_press
+      - title: hold / 0,8s
+        conditions:
+          - key: payload
+            value: button_1_hold
+      - title: hold (released)
+        conditions:
+          - key: payload
+            value: button_1_long_release
+  - d: M 197.73633 25.056641 L 197.73633 198.07617 L 370.75586 198.07617 C 370.75586 102.52002 293.29248 25.056641 197.73633 25.056641 z
+    actions:
+      - title: press
+        conditions:
+          - key: payload
+            value: button_2_press_release
+      - title: 2x press
+        conditions:
+          - key: payload
+            value: button_2_double_press
+      - title: 3x press
+        conditions:
+          - key: payload
+            value: button_2_triple_press
+      - title: 4x press
+        conditions:
+          - key: payload
+            value: button_2_quadruple_press
+      - title: 5x press
+        conditions:
+          - key: payload
+            value: button_2_quintuple_press
+      - title: hold / 0,8s
+        conditions:
+          - key: payload
+            value: button_2_hold
+      - title: hold (released)
+        conditions:
+          - key: payload
+            value: button_2_long_release
+  - d: M 24.716797 198.07617 C 24.716797 293.63232 102.18018 371.0957 197.73633 371.0957 L 197.73633 198.07617 L 24.716797 198.07617 z
+    actions:
+      - title: press
+        conditions:
+          - key: payload
+            value: button_3_press_release
+      - title: 2x press
+        conditions:
+          - key: payload
+            value: button_3_double_press
+      - title: 3x press
+        conditions:
+          - key: payload
+            value: button_3_triple_press
+      - title: 4x press
+        conditions:
+          - key: payload
+            value: button_3_quadruple_press
+      - title: 5x press
+        conditions:
+          - key: payload
+            value: button_3_quintuple_press
+      - title: hold / 0,8s
+        conditions:
+          - key: payload
+            value: button_3_hold
+      - title: hold (released)
+        conditions:
+          - key: payload
+            value: button_3_long_release
+  - d: M 197.73633 198.07617 L 197.73633 371.0957 C 293.29248 371.0957 370.75586 293.63232 370.75586 198.07617 L 197.73633 198.07617 z
+    actions:
+      - title: press
+        conditions:
+          - key: payload
+            value: button_4_press_release
+      - title: 2x press
+        conditions:
+          - key: payload
+            value: button_4_double_press
+      - title: 3x press
+        conditions:
+          - key: payload
+            value: button_4_triple_press
+      - title: 4x press
+        conditions:
+          - key: payload
+            value: button_4_quadruple_press
+      - title: 5x press
+        conditions:
+          - key: payload
+            value: button_4_quintuple_press
+      - title: hold / 0,8s
+        conditions:
+          - key: payload
+            value: button_4_hold
+      - title: hold (released)
+        conditions:
+          - key: payload
+            value: button_4_long_release
